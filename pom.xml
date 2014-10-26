@@ -12,6 +12,20 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <mvn.spring.version>3.2.9.RELEASE</mvn.spring.version>
   </properties>
+
+  <dependencies>
+      <dependency>
+          <groupId>org.springframework</groupId>
+          <artifactId>spring-context</artifactId>
+          <version>${mvn.spring.version}</version>
+      </dependency>
+      <dependency>
+          <groupId>eu.vitaliy</groupId>
+          <artifactId>cc</artifactId>
+          <version>1.0-SNAPSHOT</version>
+      </dependency>
+  </dependencies>
 
 </project>
