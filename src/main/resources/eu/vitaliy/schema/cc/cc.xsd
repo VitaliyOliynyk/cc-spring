@@ -6,6 +6,7 @@
             elementFormDefault="qualified"
             attributeFormDefault="unqualified">
     <xsd:import namespace="http://www.springframework.org/schema/beans" />
+
     <xsd:element name="tabview">
         <xsd:complexType>
             <xsd:complexContent>
@@ -13,6 +14,18 @@
                     <xsd:attribute name="name" type="xsd:string" use="required" />
                     <xsd:attribute name="url" type="xsd:string" use="required" />
                     <xsd:attribute name="controller" type="xsd:string" use="required" />
+                </xsd:extension>
+            </xsd:complexContent>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="tabgroup">
+        <xsd:complexType>
+            <xsd:complexContent>
+                <xsd:extension base="beans:identifiedType">
+                    <xsd:attribute name="name" type="xsd:string" use="required" />
+                    <xsd:attribute name="url" type="xsd:string" use="required" />
+                    <xsd:attribute name="tabs" type="xsd:string" use="required" />
                 </xsd:extension>
             </xsd:complexContent>
         </xsd:complexType>

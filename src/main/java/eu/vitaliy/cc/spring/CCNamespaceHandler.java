@@ -6,5 +6,6 @@ public class CCNamespaceHandler extends NamespaceHandlerSupport {
     @Override
     public void init() {
         registerBeanDefinitionParser("tabview", new TabViewBeanDefinitionParser());
+        registerBeanDefinitionParser("tabgroup", new TabGroupBeanDefinitionParser());
     }
 }
